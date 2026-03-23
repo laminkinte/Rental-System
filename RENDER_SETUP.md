@@ -1,4 +1,4 @@
-# 🚀 RENDER DEPLOYMENT - STEP BY STEP
+z# 🚀 RENDER DEPLOYMENT - STEP BY STEP
 
 ## ⚠️ PROBLEM IDENTIFIED
 Your current service is configured as **Node.js** instead of **PHP**. 
