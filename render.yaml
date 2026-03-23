@@ -1,0 +1,53 @@
+# Render.com Blueprint
+# This file tells Render how to deploy your Laravel application
+
+services:
+  - type: web
+    name: rental-system
+    runtime: php
+    region: oregon
+    plan: free
+    
+    # Build and deployment settings
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      php artisan key:generate
+      php artisan config:cache
+      php artisan route:cache
+    
+    # Start command for PHP/Laravel
+    startCommand: php -S 0.0.0.0:10000 -t public
+    
+    # Health check path
+    healthCheckPath: /
+    
+    # Environment variables (add your own in Render dashboard)
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        fromService:
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL
+      
+      # Database - configure in Render dashboard
+      - key: DB_CONNECTION
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+
+databases:
+  - name: rental-system-db
+    databaseName: rental_system
+    plan: free
+    ipAllowList: [] # Allow all IPs
