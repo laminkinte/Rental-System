@@ -1,8 +1,71 @@
-# Rental System - Property Rental Platform
+# 🚀 Rental System - Property Rental Platform
 
 A comprehensive property rental management system built with Laravel and Livewire.
 
-## Features
+---
+
+## 🌐 LIVE DEMO DEPLOYMENT
+
+**Your GitHub Repo:** https://github.com/laminkinte/Rental-System
+
+---
+
+## 📋 DEPLOYMENT OPTIONS
+
+### ✅ OPTION 1: 000WEBHOSTING (RECOMMENDED - NO CREDIT CARD)
+
+**100% FREE - PHP Hosting with MySQL**
+
+#### Steps:
+1. Go to: **https://www.000webhosting.com**
+2. Click **"Get Free Hosting"**
+3. Sign up with email (NO credit card!)
+4. Create site → Select **"Upload your own website"**
+5. Upload files via **File Manager** to `/public_html`
+6. Create MySQL database
+7. Edit `.env` with database credentials
+
+#### Database Settings:
+```
+DB_CONNECTION=mysql
+DB_HOST=sql313.000webhost.com
+DB_PORT=3306
+DB_DATABASE=your_db_name
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+#### Your Site URL:
+`https://rental-system.000webhostapp.com`
+
+---
+
+### ⚠️ Platforms Requiring Credit Card:
+
+| Platform | Auto-Deploy | Credit Card Required |
+|----------|-------------|---------------------|
+| Koyeb | ✅ Yes | ❌ Yes |
+| Render | ✅ Yes | ❌ Yes |
+| Fly.io | ✅ Yes | ❌ Yes |
+| Railway | ✅ Yes | ❌ Yes |
+| Oracle Cloud | ✅ Yes | ❌ Sometimes |
+
+---
+
+## 📁 ALL DEPLOYMENT GUIDES
+
+| File | Description |
+|------|-------------|
+| `000WEBHOST_DEPLOY.md` | 000WebHosting setup |
+| `UPLOAD_TO_INFINITYFREE.md` | InfinityFree setup |
+| `KOYEB_DEPLOY.md` | Koyeb (needs card) |
+| `NETLIFY_LARAVEL.md` | Netlify (PHP limited) |
+| `FREE_HOSTING_ALTERNATIVES.md` | All options |
+| `NEON_SETUP.md` | Free PostgreSQL database |
+
+---
+
+## ✨ Features
 
 ### For Guests
 - Browse and search available properties
@@ -35,63 +98,45 @@ A comprehensive property rental management system built with Laravel and Livewir
 - Group bookings
 - Role-based access control
 
-## Requirements
+---
 
-- PHP 8.2+
-- Laravel 11.x
-- MySQL 8.0+
-- Node.js 18+
-- Composer
-
-## Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   composer install
-   npm install
-   ```
-
-3. Copy environment file:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Generate application key:
-   ```bash
-   php artisan key:generate
-   ```
-
-5. Run migrations:
-   ```bash
-   php artisan migrate
-   ```
-
-6. Seed the database (optional):
-   ```bash
-   php artisan db:seed
-   ```
-
-7. Start the development server:
-   ```bash
-   php artisan serve
-   ```
-
-## Free Hosting Options
-
-- **Render.com** - Free tier with auto-deploy
-- **Railway.app** - Free tier available
-- **Vercel** - Frontend hosting (requires API adaptation)
-- **Heroku** - Free tier available
-
-## Tech Stack
+## 💻 Tech Stack
 
 - **Backend:** Laravel 11, PHP 8.2
 - **Frontend:** Livewire, TailwindCSS
-- **Database:** MySQL
+- **Database:** MySQL (local), PostgreSQL (production)
 - **Real-time:** Laravel Echo, Pusher
 - **Payments:** Stripe, PayPal integration ready
 
-## License
+---
+
+## 🔧 Local Development
+
+### Requirements
+- PHP 8.2+
+- Laravel 11.x
+- MySQL 8.0+ / PostgreSQL
+- Node.js 18+
+- Composer
+
+### Setup
+```bash
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+---
+
+## 📞 SUPPORT
+
+For deployment help, check the guides in this repository or create an issue on GitHub.
+
+---
+
+## 📄 License
 
 This project is private and proprietary. All rights reserved.
