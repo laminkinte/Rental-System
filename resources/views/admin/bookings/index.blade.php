@@ -1,0 +1,17 @@
+<x-app-layout>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <h1 class="text-2xl font-bold text-gray-900">Manage Bookings</h1>
+                        <a href="{{ route('admin.dashboard') }}" class="text-pink-600 hover:text-pink-700">Back to Dashboard</a>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-500">Please use the <a href="{{ route('admin.bookings') }}" class="text-pink-600 hover:underline">Bookings</a> page for managing bookings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
