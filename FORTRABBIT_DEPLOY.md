@@ -31,7 +31,7 @@ APP_NAME="JubbaStay"
 APP_ENV=production
 APP_KEY=base64:iWqUnFbvh6rnZP5GZiLqyovBLI0pEEo+rq84Lnfp3L0=
 APP_DEBUG=false
-APP_URL=https://YOUR-APP-NAME.fortrabbit.com
+APP_URL=https://en-3rq1x6.eu-w1a.frbit.app
 
 DB_CONNECTION=mysql
 DB_HOST=your-mysql-host
